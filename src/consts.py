@@ -11,4 +11,4 @@ exact_time = False
 exact_time_n = 1800
 
 log_file = "logfile.log"
-db_file = "data.swlite"
+db_file = "data.db"
