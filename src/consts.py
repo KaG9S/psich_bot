@@ -1,4 +1,4 @@
-token = "8635714553:AAG2kFQZ4hN3-Z6H9AxOyqKv20qcX950qXY"
+token = input("Give bot token: ") # 8635714553:AAG2kFQZ4hN3-Z6H9AxOyqKv20qcX950qXY
 token_u = "your_psich_bot"
 
 admin_u = "KaG9S"
