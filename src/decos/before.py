@@ -11,7 +11,7 @@ def send(to: int, message: str, reply_kb=None, reply_to=None):
         to: int = to.chat.id
     else:
         to: int = to
-    log(0, f"Recived message from {to}")
+    log(1, f"Send message to {to}")
     bot.send_message(to, message, parse_mode="markdown", reply_markup=reply_kb, reply_to_message_id=reply_to, disable_web_page_preview=True)
 
 def are_you_sure(
