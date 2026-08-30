@@ -1,10 +1,10 @@
-token = "8635714553:AAG2kFQZ4hN3-Z6H9AxOyqKv20qcX950qXY"
+from os import getenv
+
+token = getenv("BOT_TOKEN")
 token_u = "your_psich_bot"
 
-admin_u = "KaG9S"
-admin = 7852251315
-psich_u = "KaG10S" #Svetlana_Nikonets
-psich = 8646607212 #2042383390
+admin_u, admin = *(getenv("ADMIN").split(":"))
+psich_u, psich = *(getenv("ADMIN").split(":"))
 
 sandbox = False
 exact_time = False
