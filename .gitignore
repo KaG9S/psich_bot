@@ -1,5 +1,7 @@
 # [v]env
 .venv
+*.env
+!start.env
 
 # cache
 __pycache__/
