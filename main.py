@@ -13,12 +13,15 @@ if __name__ == "__main__":
         timers.timer( tinydb.comm, tinydb.save_int )
         timers.timer( tinydb.comm, 60, (lambda: tinydb.changes > 20) )
         log(1, "Started succesfully")
-        while True:
+        while consts.run:
             main_bot.bot.polling()
             timers.tick()
             sleep(0.5)
     except Exception as e:
         at_time = strftime("%H:%M:%S-%m.%d.%Y")
-        if type(e) != KeyboardInterrupt:
+        if type(e) == KeyboardInterrupt:
+            consts.run = False
+        else:
             log(3, f"{type(e).__name__}: {str(e)}")
             move("logfile.log", f"logs/logfile-{at_time}.log")
+        tinydb.comm()

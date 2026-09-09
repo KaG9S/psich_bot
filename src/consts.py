@@ -9,6 +9,7 @@ psich_u, psich = getenv("PSICH").split(":")
 sandbox = False
 exact_time = False
 exact_time_n = 1800
+run = True
 
 log_file = "logfile.log"
 db_file = "data.db"
