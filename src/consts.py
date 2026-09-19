@@ -13,4 +13,4 @@ run = True
 track_all = False
 
 log_file = "logfile.log"
-db_file = "data.db"
+db_file = getenv("DATABASE")

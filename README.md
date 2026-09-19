@@ -9,6 +9,8 @@ Configure your [start.env](./start.env) file with this data
 - bot token
 - admin id and username
 - manager id and username
+- database path
+- etc.
 
 Then, configure texts in different files from src/decos
 - [start](src/decos/start.py)
